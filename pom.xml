@@ -36,6 +36,15 @@
     		<artifactId>javax.json.bind-api</artifactId>
     		<version>1.0.0-M2</version>
       </plugin>
+      <plugin>
+        <groupId>com.heroku.sdk</groupId>
+        <artifactId>heroku-maven-plugin</artifactId>
+        <version>2.0.8</version>
+        <configuration>
+  				<appName>employeesmanagement</appName>
+			</configuration>
+      </plugin>
+      
     </plugins>
   </build>
 </project>

@@ -25,7 +25,6 @@ import java.util.TimeZone;
 
 import javax.json.bind.annotation.JsonbDateFormat;
 import javax.swing.text.DateFormatter;
-import javax.validation.Valid;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.FormParam;
 import javax.ws.rs.POST;
