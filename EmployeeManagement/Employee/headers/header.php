@@ -32,10 +32,10 @@
     ob_start();
     session_start();
      if(!isset($_SESSION["username"])){
-        header("Location: http://localhost:8082/EmployeeManagement/login.php");
+        header("Location: https://employeesmanagement.herokuapp.com/EmployeeManagement/login.php");
     }
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, "http://localhost:8080/EmployeesManagement/rest/EmployeesManagement/ViewEmployeeInfomation/");
+    curl_setopt($ch, CURLOPT_URL, "https://employeesmanagement.herokuapp.com/EmployeesManagement/rest/EmployeesManagement/ViewEmployeeInfomation/");
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_POST, 1);
     curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/x-www-form-urlencoded')); // In Java: @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
@@ -79,12 +79,12 @@
                     <a href="" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo $_SESSION['adminname']?> <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="http://localhost:8082/EmployeeManagement/Employee/index.php">
+                            <a href="https://employeesmanagement.herokuapp.com/EmployeeManagement/Employee/index.php">
                             <i class="fa fa-fw fa-user"></i> Profile</a>
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a href="http://localhost:8082/EmployeeManagement/logout.php">
+                            <a href="https://employeesmanagement.herokuapp.com/EmployeeManagement/logout.php">
                             <i class="fa fa-fw fa-power-off"></i> Log Out</a>
                         </li>
                     </ul>
@@ -94,13 +94,13 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li>
-                        <a href="http://localhost:8082/EmployeeManagement/Employee/Announcement.php"><i class="fa fa-fw fa-dashboard"></i> Announcement</a>
+                        <a href="https://employeesmanagement.herokuapp.com/EmployeeManagement/Employee/Announcement.php"><i class="fa fa-fw fa-dashboard"></i> Announcement</a>
                     </li>
                     <li>
-                        <a href="http://localhost:8082/EmployeeManagement/Employee/Salary.php"><i class="fa fa-fw fa-bar-chart-o"></i> Salary</a>
+                        <a href="https://employeesmanagement.herokuapp.com/EmployeeManagement/Employee/Salary.php"><i class="fa fa-fw fa-bar-chart-o"></i> Salary</a>
                     </li>
                     <li>
-                        <a href="http://localhost:8082/EmployeeManagement/Employee/Schedule.php"><i class="fa fa-fw fa-table"></i> Schedule</a>
+                        <a href="https://employeesmanagement.herokuapp.com/EmployeeManagement/Employee/Schedule.php"><i class="fa fa-fw fa-table"></i> Schedule</a>
                     </li>
                    
                 </ul>

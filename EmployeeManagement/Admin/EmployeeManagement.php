@@ -3,7 +3,7 @@
 ?>
 <?php
     if(!isset($_SESSION["username"])){
-        header("Location: http://localhost:8082/EmployeeManagement/login.php");
+        header("Location: https://employeesmanagement.herokuapp.com/EmployeeManagement/login.php");
     }
 ?>
             <!-- MAIN CONTENT-->
@@ -18,7 +18,7 @@
                                     <div class="table-data__tool-left">
                                         <div class="rs-select2--light rs-select2--md">
                                         <button class="au-btn au-btn-icon au-btn--green au-btn--small">
-                                            <i class="zmdi zmdi-plus"></i><a href="http://localhost:8082/EmployeeManagement/Admin/Add_New_Employee.php" style="color:white;">Add</a></button>
+                                            <i class="zmdi zmdi-plus"></i><a href="https://employeesmanagement.herokuapp.com/EmployeeManagement/Admin/Add_New_Employee.php" style="color:white;">Add</a></button>
                                         </div>
                                     </div>
                                     <div class="table-data__tool-right">
@@ -56,7 +56,7 @@
 
                                         <?php
                                             $ch = curl_init();
-                                            curl_setopt($ch, CURLOPT_URL, "http://localhost:8080/EmployeesManagement/rest/EmployeesManagement/Admin/GetListEmployee/");
+                                            curl_setopt($ch, CURLOPT_URL, "https://employeesmanagement.herokuapp.com/EmployeesManagement/rest/EmployeesManagement/Admin/GetListEmployee/");
                                             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
                                             curl_setopt($ch, CURLOPT_POST, 1);
                                             curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/x-www-form-urlencoded')); // In Java: @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
@@ -98,10 +98,10 @@
                                                         <td>
                                                             <div class="table-data-feature" style="float:left">
                                                                 <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
-                                                                    <a href="http://localhost:8082/EmployeeManagement/Admin/Edit_Employee.php?id=<?=$t['id']?>" class="zmdi zmdi-edit"></a>
+                                                                    <a href="https://employeesmanagement.herokuapp.com/EmployeeManagement/Admin/Edit_Employee.php?id=<?=$t['id']?>" class="zmdi zmdi-edit"></a>
                                                                 </button>
                                                                 <button class="item" data-toggle="tooltip" data-placement="top" title="Set Deactive">
-                                                                    <a href="http://localhost:8082/EmployeeManagement/Admin/Delete_Employee.php?id=<?=$t['id']?>" class="zmdi zmdi-delete"></a>
+                                                                    <a href="https://employeesmanagement.herokuapp.com/EmployeeManagement/Admin/Delete_Employee.php?id=<?=$t['id']?>" class="zmdi zmdi-delete"></a>
                                                                 </button>
                                                             </div>
                                                         </td>
@@ -139,7 +139,7 @@
                                     $test = substr( $data, strpos($data, "\n")+1 );
 									$test = str_replace("<br />","",$test);
                                     $ch = curl_init();
-                                    curl_setopt($ch, CURLOPT_URL, "http://localhost:8080/EmployeesManagement/rest/EmployeesManagement/Admin/ImportCSV/");
+                                    curl_setopt($ch, CURLOPT_URL, "https://employeesmanagement.herokuapp.com/EmployeesManagement/rest/EmployeesManagement/Admin/ImportCSV/");
                                     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
                                     curl_setopt($ch, CURLOPT_POST, 1);
                                     curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/x-www-form-urlencoded')); // In Java: @Consumes(MediaType.APPLICATION_FORM_URLENCODED)

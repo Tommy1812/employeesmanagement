@@ -44,10 +44,10 @@ ob_start();
 session_start();
 if(isset($_SESSION["username"]) && isset($_SESSION["role"])){
 	if($_SESSION["role"] == '1'){
-		header('Location: http://localhost:8082/EmployeeManagement/Admin/Admin_Account.php');
+		header('Location: https://employeesmanagement.herokuapp.com/EmployeeManagement/Admin/Admin_Account.php');
 	}
 	elseif($_SESSION["role"] == '0'){
-		header('Location: http://localhost:8082/EmployeeManagement/Employee/Announcement.php');
+		header('Location: https://employeesmanagement.herokuapp.com/EmployeeManagement/Employee/Announcement.php');
 	}
 }
 ?>
@@ -88,7 +88,7 @@ if(isset($_SESSION["username"]) && isset($_SESSION["role"])){
             
 			// Send username/password to Tomcat server for authenticating
 			$ch = curl_init();
-			curl_setopt($ch, CURLOPT_URL, "http://localhost:8080/EmployeesManagement/rest/EmployeesManagement/login/");
+			curl_setopt($ch, CURLOPT_URL, "https://employeesmanagement.herokuapp.com/EmployeesManagement/rest/EmployeesManagement/login/");
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 			curl_setopt($ch, CURLOPT_POST, 1);
 			curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/x-www-form-urlencoded')); // In Java: @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
@@ -107,7 +107,7 @@ if(isset($_SESSION["username"]) && isset($_SESSION["role"])){
 				$_SESSION["username"]          = $_POST['username']; 
 				$_SESSION["password"]          = $_POST['password']; 
 				$_SESSION["role"]  = $output;
-				header("Location: http://localhost:8082/EmployeeManagement/Admin/Admin_Account.php");
+				header("Location: https://employeesmanagement.herokuapp.com/EmployeeManagement/Admin/Admin_Account.php");
 				
 			}
 			else if($output == "0")
@@ -116,7 +116,7 @@ if(isset($_SESSION["username"]) && isset($_SESSION["role"])){
 				$_SESSION["username"]          = $_POST['username'];
 				$_SESSION["password"]          = $_POST['password']; 
 				$_SESSION["role"]  = $output;
-				header("Location: http://localhost:8082/EmployeeManagement/Employee/Announcement.php");
+				header("Location: https://employeesmanagement.herokuapp.com/EmployeeManagement/Employee/Announcement.php");
 			}
 			else if($output == "99"){
 				?>

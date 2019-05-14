@@ -11,10 +11,10 @@
 <body style="background-color:powderblue;">
 <?php
  if(!isset($_SESSION["username"])){
-        header("Location: http://localhost:8082/EmployeeManagement/login.php");
+        header("Location: https://employeesmanagement.herokuapp.com/EmployeeManagement/login.php");
     }
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, "http://localhost:8080/EmployeesManagement/rest/EmployeesManagement/Employee/GetListAnnouncement/");
+    curl_setopt($ch, CURLOPT_URL, "https://employeesmanagement.herokuapp.com/EmployeesManagement/rest/EmployeesManagement/Employee/GetListAnnouncement/");
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_POST, 1);
     curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/x-www-form-urlencoded')); // In Java: @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
@@ -48,7 +48,7 @@
                                     ?> 
                                         <div class = "row">
                                             <p class="col-md-6" style ="text-align:center"> <?= substr($a['datepost'], 0, 10);?></p>
-                                            <a class="col-md-6" style ="text-align:center;" href="http://localhost:8082/EmployeeManagement/Employee/ViewAnnouncement.php?title=<?=$a['title']?>">
+                                            <a class="col-md-6" style ="text-align:center;" href="https://employeesmanagement.herokuapp.com/EmployeeManagement/Employee/ViewAnnouncement.php?title=<?=$a['title']?>">
                                                 <?= $a['title']?>
                                             </a>
                                         </div>

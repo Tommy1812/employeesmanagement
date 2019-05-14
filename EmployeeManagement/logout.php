@@ -2,7 +2,7 @@
     ob_start();
     session_start();
     if(!isset($_SESSION["username"])){
-        header("Location: http://localhost:8082/EmployeeManagement/login.php");
+        header("Location: https://employeesmanagement.herokuapp.com/EmployeeManagement/login.php");
     }
     
     //remove PHPSESSID from browser
@@ -12,5 +12,5 @@
     $_SESSION = array();
     //clear session from disk
     session_destroy();
-    header("Location: http://localhost:8082/EmployeeManagement/login.php");
+    header("Location: https://employeesmanagement.herokuapp.com/EmployeeManagement/login.php");
 ?>

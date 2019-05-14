@@ -147,7 +147,7 @@
                                                                 && isset($_POST['PASSWORD_INPUT'])){
                                     $ch = curl_init();
                                     curl_setopt( $ch, CURLOPT_ENCODING, "UTF-8" );
-                                    curl_setopt($ch, CURLOPT_URL, "http://localhost:8080/EmployeesManagement/rest/EmployeesManagement/UpdatePersonalInfomation/");
+                                    curl_setopt($ch, CURLOPT_URL, "https://employeesmanagement.herokuapp.com/EmployeesManagement/rest/EmployeesManagement/UpdatePersonalInfomation/");
                                     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
                                     curl_setopt($ch, CURLOPT_POST, 1);
                                     curl_setopt($ch, CURLOPT_HTTPHEADER , array(

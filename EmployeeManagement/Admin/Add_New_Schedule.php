@@ -4,13 +4,13 @@
 
 <?php
     if(!isset($_SESSION["username"])){
-        header("Location: http://localhost:8082/EmployeeManagement/login.php");
+        header("Location: https://employeesmanagement.herokuapp.com/EmployeeManagement/login.php");
     }
 ?>
 
 <?php
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, "http://localhost:8080/EmployeesManagement/rest/EmployeesManagement/getListEmployeeID/");
+    curl_setopt($ch, CURLOPT_URL, "https://employeesmanagement.herokuapp.com/EmployeesManagement/rest/EmployeesManagement/getListEmployeeID/");
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_POST, 1);
     curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/x-www-form-urlencoded')); // In Java: @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
@@ -26,7 +26,7 @@
 
     // get year
     $ch1 = curl_init();
-    curl_setopt($ch1, CURLOPT_URL, "http://localhost:8080/EmployeesManagement/rest/EmployeesManagement/getYear/");
+    curl_setopt($ch1, CURLOPT_URL, "https://employeesmanagement.herokuapp.com/EmployeesManagement/rest/EmployeesManagement/getYear/");
     curl_setopt($ch1, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch1, CURLOPT_POST, 1);
     curl_setopt($ch1, CURLOPT_HTTPHEADER, array('Content-Type: application/x-www-form-urlencoded')); // In Java: @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
@@ -38,7 +38,7 @@
     curl_close($ch1);
     $arrYear = (array)json_decode($array_Year,true);
         $ch2 = curl_init();
-        curl_setopt($ch2, CURLOPT_URL, "http://localhost:8080/EmployeesManagement/rest/EmployeesManagement/getMonth/");
+        curl_setopt($ch2, CURLOPT_URL, "https://employeesmanagement.herokuapp.com/EmployeesManagement/rest/EmployeesManagement/getMonth/");
         curl_setopt($ch2, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch2, CURLOPT_POST, 1);
         curl_setopt($ch2, CURLOPT_HTTPHEADER, array('Content-Type: application/x-www-form-urlencoded')); // In Java: @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
@@ -174,7 +174,7 @@
 
                             if(isset($_POST['GV_select'])  && isset($_POST['Day_select']) && isset($_POST['Shift_select']) && isset($_POST['Location_input']) && isset($_POST['Month_Select']) && isset($_POST['Year_select'])){                            
                                 $ch = curl_init();
-                                curl_setopt($ch, CURLOPT_URL, "http://localhost:8080/EmployeesManagement/rest/EmployeesManagement/Admin/AddSchedule/");
+                                curl_setopt($ch, CURLOPT_URL, "https://employeesmanagement.herokuapp.com/EmployeesManagement/rest/EmployeesManagement/Admin/AddSchedule/");
                                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
                                 curl_setopt($ch, CURLOPT_POST, 1);
                                 curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/x-www-form-urlencoded')); // In Java: @Consumes(MediaType.APPLICATION_FORM_URLENCODED)

@@ -76,7 +76,7 @@
                 <div class="container-fluid">
                     <ul class="navbar-mobile__list list-unstyled">
                         <li>
-                            <a href="http://localhost:8082/EmployeeManagement/Admin/Admin_Account.php">
+                            <a href="https://employeesmanagement.herokuapp.com/EmployeeManagement/Admin/Admin_Account.php">
                                 <i class="fas fa-user"></i>My Account</a>
                         </li>
                         <li class="has-sub">
@@ -84,19 +84,19 @@
                                 <i class="fas fa-bell"></i>Announcement</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
-                                    <a href="http://localhost:8082/EmployeeManagement/Admin/Upload_Announcement.php">Upload new Announcement</a>
+                                    <a href="https://employeesmanagement.herokuapp.com/EmployeeManagement/Admin/Upload_Announcement.php">Upload new Announcement</a>
                                 </li>
                                 <li>
-                                    <a href="http://localhost:8082/EmployeeManagement/Admin/View_All_Announcement.php">View all Announcement</a>
+                                    <a href="https://employeesmanagement.herokuapp.com/EmployeeManagement/Admin/View_All_Announcement.php">View all Announcement</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="active">
-                            <a href="http://localhost:8082/EmployeeManagement/Admin/Schedule.php">
+                            <a href="https://employeesmanagement.herokuapp.com/EmployeeManagement/Admin/Schedule.php">
                                 <i class="fas fa-table"></i>Schedule</a>
                         </li>
                         <li>
-                            <a href="http://localhost:8082/EmployeeManagement/Admin/EmployeeManagement.php">
+                            <a href="https://employeesmanagement.herokuapp.com/EmployeeManagement/Admin/EmployeeManagement.php">
                                 <i class="fas fa-users"></i>Employee Management</a>
                         </li>
                     </ul>
@@ -116,7 +116,7 @@
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
                         <li>
-                            <a href="http://localhost:8082/EmployeeManagement/Admin/Admin_Account.php">
+                            <a href="https://employeesmanagement.herokuapp.com/EmployeeManagement/Admin/Admin_Account.php">
                                 <i class="fas fa-user"></i>My Account</a>
                         </li>
                         <li class="has-sub">
@@ -124,23 +124,23 @@
                                 <i class="fas fa-bell"></i>Announcement</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
-                                    <a href="http://localhost:8082/EmployeeManagement/Admin/Upload_Announcement.php">Upload new Announcement</a>
+                                    <a href="https://employeesmanagement.herokuapp.com/EmployeeManagement/Admin/Upload_Announcement.php">Upload new Announcement</a>
                                 </li>
                                 <li>
-                                    <a href="http://localhost:8082/EmployeeManagement/Admin/View_All_Announcement.php">View all Announcement</a>
+                                    <a href="https://employeesmanagement.herokuapp.com/EmployeeManagement/Admin/View_All_Announcement.php">View all Announcement</a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="http://localhost:8082/EmployeeManagement/Admin/Schedule.php">
+                            <a href="https://employeesmanagement.herokuapp.com/EmployeeManagement/Admin/Schedule.php">
                                 <i class="fas fa-table"></i>Schedule</a>
                         </li>
                         <li class="active">
-                            <a href="http://localhost:8082/EmployeeManagement/Admin/EmployeeManagement.php">
+                            <a href="https://employeesmanagement.herokuapp.com/EmployeeManagement/Admin/EmployeeManagement.php">
                                 <i class="fas fa-users"></i>Employee Management</a>
                         </li>
 						<li>
-							<a href="http://localhost:8082/EmployeeManagement/Admin/Salary.php">
+							<a href="https://employeesmanagement.herokuapp.com/EmployeeManagement/Admin/Salary.php">
                                 <i class="fas fa-users"></i>Salary</a>
 						</li>
                     </ul>
@@ -183,12 +183,12 @@
                                             </div>
                                             <div class="account-dropdown__body">
                                                 <div class="account-dropdown__item">
-                                                    <a href="http://localhost:8082/EmployeeManagement/Admin/Admin_Account.php">
+                                                    <a href="https://employeesmanagement.herokuapp.com/EmployeeManagement/Admin/Admin_Account.php">
                                                         <i class="zmdi zmdi-account"></i>Account</a>
                                                 </div>
                                             </div>
                                             <div class="account-dropdown__footer">
-                                                <a href="http://localhost:8082/EmployeeManagement/Admin/AdminLogout.php">
+                                                <a href="https://employeesmanagement.herokuapp.com/EmployeeManagement/Admin/AdminLogout.php">
                                                     <i class="zmdi zmdi-power"></i>Logout</a>
                                             </div>
                                         </div>
