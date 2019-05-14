@@ -61,6 +61,6 @@
 	<classpathentry kind="lib" path="C:/Users/Win 8.1/Downloads/javax.ws.rs.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/javax.ws.rs-api-2.0.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/javax.ws.rs.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/javax.json.bind.annotation.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/javax.json.bind.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
