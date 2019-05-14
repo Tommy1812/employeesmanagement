@@ -30,6 +30,12 @@
           <warSourceDirectory>WebContent</warSourceDirectory>
         </configuration>
       </plugin>
+      
+      <plugin>
+    		<groupId>javax.json.bind</groupId>
+    		<artifactId>javax.json.bind-api</artifactId>
+    		<version>1.0.0-M2</version>
+      </plugin>
     </plugins>
   </build>
 </project>
